@@ -7,6 +7,20 @@
 //   palindrome("abba") === true
 //   palindrome("abcdefg") === false
 
-function palindrome(str) {}
+const reverse = require("../reversestring");
+
+function palindrome(str) {
+
+    reversed = str.split('').reverse().join('');
+    return reversed === str;
+    // let reversed = '';
+    // for (let characters of str){
+    //     reversed = characters + reversed;
+    // }
+    // reversed;
+    // if (reversed === str){
+    //     return true
+    // }
+}
 
 module.exports = palindrome;
